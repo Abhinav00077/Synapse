@@ -1,8 +1,8 @@
-# 📰 News Headline Summarizer
+#News Headline Summarizer
 
 An AI-powered financial news analysis system that automatically scrapes, clusters, and summarizes financial headlines using advanced NLP techniques and the Gemini API.
 
-## 🚀 Features
+##Features
 
 - **Automated Web Scraping**: Scrapes 200+ financial headlines daily from Google News using BeautifulSoup
 - **Semantic Clustering**: Uses MiniLM embeddings and KMeans clustering (k=10) to group similar headlines
@@ -11,7 +11,7 @@ An AI-powered financial news analysis system that automatically scrapes, cluster
 - **Automated Scheduling**: Runs daily on weekdays to keep summaries current
 - **70% Manual Effort Reduction**: Automates the entire news analysis workflow
 
-## 🛠️ Technology Stack
+##Technology Stack
 
 - **Web Scraping**: BeautifulSoup4, Requests
 - **NLP & ML**: Sentence Transformers (MiniLM), Scikit-learn (KMeans)
@@ -21,13 +21,13 @@ An AI-powered financial news analysis system that automatically scrapes, cluster
 - **Visualization**: Plotly
 - **Scheduling**: Schedule library
 
-## 📋 Prerequisites
+##Prerequisites
 
 - Python 3.8+
 - Gemini API key from Google AI Studio
 - Internet connection for web scraping
 
-## 🚀 Quick Start
+##Quick Start
 
 ### 1. Clone the Repository
 ```bash
@@ -81,7 +81,7 @@ python clustering.py   # Test clustering
 python summarizer.py   # Test summarization
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Synapse-1/
@@ -100,7 +100,7 @@ Synapse-1/
     └── clustering_model.pkl # Trained clustering model
 ```
 
-## 🔧 Configuration
+##Configuration
 
 ### Key Settings (config.py)
 - `K_CLUSTERS`: Number of clusters for KMeans (default: 10)
@@ -113,7 +113,7 @@ Synapse-1/
 - `MAX_HEADLINES_PER_DAY`: Customize headline limit
 - `K_CLUSTERS`: Customize cluster count
 
-## 📈 How It Works
+## How It Works
 
 ### 1. Web Scraping
 - BeautifulSoup scrapes Yahoo Finance for financial headlines
@@ -135,7 +135,7 @@ Synapse-1/
 - Timeline of headline counts
 - Professional summary display
 
-## 🎯 Key Benefits
+## Key Benefits
 
 - **Time Savings**: 70% reduction in manual news analysis effort
 - **Consistency**: Automated processing ensures uniform analysis
@@ -143,7 +143,7 @@ Synapse-1/
 - **Insights**: AI-generated summaries highlight key market trends
 - **Accessibility**: User-friendly dashboard for non-technical users
 
-## 🔍 Sample Output
+## Sample Output
 
 ### Cluster Summary
 ```
@@ -162,7 +162,7 @@ factor. Overall market sentiment is positive, with investors favoring companies
 demonstrating strong digital transformation initiatives.
 ```
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -182,26 +182,3 @@ demonstrating strong digital transformation initiatives.
 4. **Rate Limiting**
    - The scraper includes delays to respect rate limits
    - If issues persist, increase delays in `scraper.py`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Google Gemini API for AI summarization
-- Sentence Transformers for MiniLM embeddings
-- Yahoo Finance for financial news content
-- Streamlit for the beautiful dashboard interface
-
----
-
-**Built with ❤️ using BeautifulSoup, MiniLM, KMeans, Gemini API, and Streamlit** 
