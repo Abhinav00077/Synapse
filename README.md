@@ -60,7 +60,7 @@ GEMINI_API_KEY=your_actual_gemini_api_key_here
 streamlit run app.py
 ```
 
-## 📊 Usage
+## Usage
 
 ### Interactive Dashboard
 1. Open the Streamlit app in your browser
